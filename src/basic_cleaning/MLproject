@@ -5,54 +5,30 @@ entry_points:
   main:
     parameters:
 
-      parameters [parameter1:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      parameter2]: input_artifact:
-        description: ## ADD DESCRIPTION
+      input_artifact:
+        description: Fully-qualified name for the input artifact
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: Fully qualified name for the output artifact
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: Type of the artifact to create
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: Description of the created artifact
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      max_priceinput_artifact:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      output_artifact:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      output_type:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      output_description:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      min_price:
-        description: ## ADD DESCRIPTION
+        description: Miniumum price allowed in the dataset, used to filter out invalid data
         type: string
 
       max_price:
-        description: ## ADD DESCRIPTION
+        description: Maximum price allowed in the dataset, used to filter out invalid data
         type: string
 
 
     command: >-
-        python run.py  --parameters [parameter1 {parameters [parameter1}  --parameter2]: input_artifact {parameter2]: input_artifact}  --output_artifact {output_artifact}  --output_type {output_type}  --output_description {output_description}  --min_price {min_price}  --max_priceinput_artifact {max_priceinput_artifact}  --output_artifact {output_artifact}  --output_type {output_type}  --output_description {output_description}  --min_price {min_price}  --max_price {max_price} 
+        python run.py  --input_artifact {input_artifact}  --output_artifact {output_artifact}  --output_type {output_type}  --output_description {output_description}  --min_price {min_price}  --max_price {max_price}
