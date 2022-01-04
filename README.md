@@ -1,3 +1,8 @@
+#Important links
+https://wandb.ai/samberic/nyc_airbnb/overview << W&B page for project
+
+https://github.com/samberic/nd0821-c2-build-model-workflow-starter/ << github project
+
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
 You are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
